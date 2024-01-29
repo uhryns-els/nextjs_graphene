@@ -1,0 +1,6 @@
+
+main .homePageInner {
+   margin: var(--primitives--sizes--spacing--spacing-8);
+   border: 1px solid var(--primitives--swatches--greyscale--color-black-L73);
+   padding: var(--primitives--sizes--spacing--spacing-8);;
+}

@@ -1,18 +1,38 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-input[type='number'] {
-  -moz-appearance: textfield;
-  appearance: textfield;
+/*here is recommended fonts that graphene use for its components*/
+@font-face {
+    src: url(../../public/fonts/ElsevierSansWeb-Regular.woff2) format('woff2');
+    font-family: Elsevier Sans;
+}
+@font-face {
+    src: url(../../public/fonts/ElsevierSansWeb-Bold.woff2) format('woff2');
+    font-weight: bold;
+    font-family: Elsevier Sans;
+}
+@font-face {
+    src: url(../../public/fonts/ElsevierSansWeb-RegularItalic.woff2) format('woff2');
+    font-style: italic;
+    font-family: Elsevier Sans;
+}
+@font-face {
+    src: url(../../public/fonts/ElsevierSansWeb-BoldItalic.woff2) format('woff2');
+    font-weight: bold;
+    font-style: italic;
+    font-family: Elsevier Sans;
 }
 
-input[type='number']::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+html {
+    font-size: 16px;
+    font-family: 'Elsevier Sans', Arial, sans-serif;
+    font-variant-numeric: lining-nums;
 }
 
-input[type='number']::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+/*Just example how to use tokens from graphene*/
+body {
+    margin: 0;
+    color: var(--color-text-primary);
+}
+
+main {
+    padding: var(--primitives--sizes--spacing--spacing-8);
+    background: var(--color-base);
 }

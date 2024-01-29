@@ -1,5 +1,6 @@
-## Next.js App Router Course - Starter
+This is MVP project that uses NextJS and graphene. You can use it as a template for your project.
 
-This is the starter template for the Next.js App Router Course. It contains the starting code for the dashboard application.
+Before launching project, make sure you have Artifactory access and set it up as was written here: https://graphene.elsevier.com/#/introduction/getting-started/artifactory.
 
-For more information, see the [course curriculum](https://nextjs.org/learn) on the Next.js Website.
+To use graphene you will need to separate server and client side code in the different files.
+In current MVP there are two pages: Home and Profile page. In ui folder create tsx/jsx file with the ui that need to be render in the client side and include 'use client' in the top of the file. Then import that file to appropriate router file.
